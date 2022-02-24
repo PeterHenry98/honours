@@ -1,0 +1,43 @@
+﻿This file allows the values for the ,,,,,,,,,,,
+,,,,,,,,,,,
+Value offset,2,"##This value changes the amount that your selected values are ""jittered"" ",,,,,,,,,
+,,,,,,,,,,,
+Max,100,Maximum value for numerical data,,,,,,,,,
+,,,,,,,,,,,
+Shuffle rows,TRUE,##Leave blank if not desired,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Categorical variables,Name,Value1,Value2,Value3,Value4,Value5,,,,,
+Cat1,Gender,M,F,,,,,,,,
+Cat2,Location,A,B,C,D,E,,,,,
+Cat3,Age,T,U,L,O,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Numerical variables,Name,,,,,,,,,,
+Num1,ss,,,,,,,,,,
+Num2,sj,,,,,,,,,,
+Num3,st,,,,,,,,,,
+Num4,sd,,,,,,,,,,
+Num5,so,,,,,,,,,,
+,,,,,,,,,,,
+#RELATIONSHIPS,,,,,,,,,,,
+These contain variables which define the minimum and maximum values for their respective uniform distributions,,,,,,,,,,,
+Relationships,V1Min,V1Max,V2Min,V2Max,V3Min,V3Max,V4Min,V4Max,,,
+Rel1,60,100,60,100,60,100,75,100,,,Relationship between Cat3 and Num4
+Rel2,0,30,15,50,30,80,60,100,Cat1:,2,"Relationship between Cat3 and Num2, where Cat1 is set to a specified value:"
+,,,,,,,,,,,
+Rel3,Cat1:,1,Cat2:,2,,,,,,,"Parabolic relationship between two numeric values, for specified values that relate to Cat1 and Cat2"
+,,,,,,,,,,,
+Rel4,Cat1:,2,Cat2:,5,Cat3:,1,,,,,"Linear relationship between Num2 and Num1, for specified values for Cat1, Cat2 and Cat3"
+,,,,,,,,,,,
+Rel5,Cat2:,1,Cat2:,3,SD:,0.3,,,,,Relationship between Num3 and Num1 for two specified values in Cat2 SD should ideally be less than 0.5
+,,,,,,,,,,,
+Rel6,Cat1:,2,Num1:,0.33,Num2:,0.33,Num3:,0.33,Num4:,0.01,"Overall score calculation for Num5, for a specified value for Cat1 Num1-4 values determine the weighting of each value when calculating the overall value"
+,,,,,,,,,,,
+Rel7,Cat2:,4,Amount(%):,15,,,,,,,Boost to the overall score for one value in Cat2
+Rel8,,,,,,,,,,,
